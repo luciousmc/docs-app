@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <Provider>
+      <Provider session={pageProps.session}>
         <Component {...pageProps} />
       </Provider>
     </>
